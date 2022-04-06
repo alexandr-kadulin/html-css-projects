@@ -1,0 +1,255 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.container {
+	max-width: 1110px;
+	margin: 0 auto;
+	padding: 0 55px;
+}
+.content {
+	flex: 1 1 auto;
+}
+.title {
+	font-size: 68px;
+	color: #007765;
+	font-weight: 600;
+}
+.text {
+	font-size: 32px;
+	color: #000000;
+}
+.text-c04 {
+	font-size: 32px;
+	color: #000000;
+	line-height: 40px;
+}
+.nav {
+	background-color: #007765;
+	padding: 20px 0;
+}
+.nav__row {
+	display: flex;
+	justify-content: space-between;
+}
+.nav__img {
+	align-self: center;
+	padding: 0 23px 0 0;
+}
+.menu__link {
+	color: inherit;
+}
+.menu__item_1 a::after {
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 22px;
+	background-color: #FFFFFF;
+	margin-left: 11.5px;
+}
+.menu__item_2 a::after {
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 22px;
+	background-color: #FFFFFF;
+	margin-left: 11.5px;
+}
+.menu__row {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 100%;
+	margin: 0 -11.5px;
+}
+.menu__item {
+	padding: 0 11.5px;
+	color: #FFFFFF;
+	font-size: 24px;
+}
+.card-01 {
+	background: url('../img/jumbotron.jpg') center/cover no-repeat;
+	padding: 160px 0;
+}
+.card-01__row {
+	display: flex;
+}
+.card-01__title {
+	color: #FFFFFF;
+	flex: 1 1 auto;
+	text-align: center;
+}
+.card-02 {
+	background-color: #EEEEEE;
+	padding: 48px 0 92px;
+}
+.card-02__row {
+	display: flex;
+}
+.card-02__body {
+	flex: 1 1 auto;
+}
+.card-02__title {
+	text-align: center;
+	margin: 0 0 16px;
+}
+.card-02__text p {
+	margin: 0 0 30px;
+	line-height: 40px;
+}
+.card-02__text p:last-child {
+	margin: 0;
+}
+
+.card-03 {
+	background: url('../img/hero.jpg') center/cover no-repeat;
+	padding: 128px 0;
+}
+.card-03__row {
+	display: flex;
+}
+.card-03__body {
+	max-width: 893px;
+	margin: 0 auto;
+}
+.card-03__text {
+	flex: 1 1 auto;
+	text-align: center;
+	color: #FFFFFF;
+	font-style: italic;
+	font-size: 48px;
+	line-height: 65px;
+	font-weight: 500;
+}
+.card-04 {
+	padding: 48px 0 57px;
+	background-color: #FFFFFF;
+	border-bottom: 0.5px solid #d3d3d3;
+}
+.card-04__title {
+	text-align: center;
+	margin: 0 0 16px;
+}
+.card-04__row {
+	display: flex;
+	flex-direction: column;
+}
+.card-04__column {
+	margin: 0 0 35px;
+}
+.item__row {
+	display: flex;
+}
+.item__img {
+	flex: 0 0 115px;
+}
+.item__img img {
+	max-width: 100%;
+}
+.item__text {
+	flex: 1 1 auto;
+	padding: 0 0 0 48px;
+}
+.card-04__text p {
+	margin: 0 0 40px;
+}
+.card-04__text p:last-child {
+	margin: 0;
+}
+
+.team {
+	background-color: #FFFFFF;
+	padding: 48px 0 64px;
+}
+.team__title {
+	margin: 0 0 32px;
+	text-align: center;
+}
+.team__row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+}
+.team__column {
+	padding: 0 15px;
+	margin: 0 0 30px;
+	flex: 0 1 33.333%;
+}
+.team__img {
+	text-align: center;
+	margin: 0 0 12px;
+}
+.team__subtitle {
+	text-align: center;
+	color: #007765;
+	font-size: 24px;
+	font-weight: 700;
+}
+.team__text {
+	text-align: center;
+	font-size: 18px;
+	font-style: italic;
+}
+.footer {
+	background-color: #333333;
+	padding: 48px 0 64px;
+}
+.footer__body {
+	max-width: 540px;
+	margin: 0 auto;
+}
+.footer__row {
+	display: flex;
+}
+.footer__text {
+	flex: 1 1 auto;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 18px;
+	letter-spacing: 0.3px;
+}
