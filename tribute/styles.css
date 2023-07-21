@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+main {
+  margin: 15px;
+  padding: 15px;
+  background-color: #eee;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+figcaption {
+  display: block;
+  text-align: center;
+  margin: 1rem 0 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  margin: auto;
+}
+
+figure {
+  background-color: #fff;
+  padding: 15px;
+}
+
+ul {
+  max-width: 750px;
+  margin: auto;
+  padding-left: 15px;
+}
+
+li {
+  margin: 1rem 0;
+}
+
+span {
+  font-weight: bold;
+}
